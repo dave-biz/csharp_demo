@@ -4,6 +4,6 @@ var sw = System.Diagnostics.Stopwatch.StartNew();
 
 while (sw.Elapsed < TimeSpan.FromMinutes(1))
 {
-    Console.WriteLine("Sleeping ...");
+    Console.WriteLine($"Sleeping at {DateTime.UtcNow} ...");
     Thread.Sleep(TimeSpan.FromSeconds(5));
 }
